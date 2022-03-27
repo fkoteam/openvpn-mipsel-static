@@ -11,7 +11,7 @@ WGET="wget --prefer-family=IPv4"
 DEST=$BASE/jffs
 LDFLAGS="-L$DEST/lib -Wl,--gc-sections"
 CPPFLAGS="-I$DEST/include"
-CFLAGS="-mtune=mips32 -mips32 -O3 -ffunction-sections -fdata-sections"	
+CFLAGS="-mtune=mips1 -mips1 -O3 -ffunction-sections -fdata-sections"	
 CXXFLAGS=$CFLAGS
 CONFIGURE="./configure --prefix=/jffs --host=mips-linux"
 MAKE="make -j`nproc`"
