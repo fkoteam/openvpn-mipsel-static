@@ -30,6 +30,7 @@ LDFLAGS=$LDFLAGS \
 CPPFLAGS=$CPPFLAGS \
 CFLAGS=$CFLAGS \
 CXXFLAGS=$CXXFLAGS \
+HOSTCC=mips-linux-uclibc-xgcc \
 CROSS_PREFIX=mips-linux- \
 ./configure \
 --prefix=/jffs
