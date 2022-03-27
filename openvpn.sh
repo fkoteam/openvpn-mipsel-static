@@ -47,14 +47,14 @@ $WGET https://www.openssl.org/source/openssl-1.0.2j.tar.gz
 tar zxvf openssl-1.0.2j.tar.gz
 cd openssl-1.0.2j
 
-./Configure linux-mips32 \
--mtune=mips32 -mips32 -ffunction-sections -fdata-sections -Wl,--gc-sections \
+./Configure linux-mips1 \
+-mtune=mips1 -mips1 -ffunction-sections -fdata-sections -Wl,--gc-sections \
 --prefix=/opts zlib \
 --with-zlib-lib=$DEST/lib \
 --with-zlib-include=$DEST/include
 
-make CC=mipsel-linux-gcc
-make CC=mipsel-linux-gcc install INSTALLTOP=$DEST OPENSSLDIR=$DEST/ssl
+make CC=mips-linux-gcc
+make CC=mips-linux-gcc install INSTALLTOP=$DEST OPENSSLDIR=$DEST/ssl
 
 ######## ####################################################################
 # LZO2 # ####################################################################
