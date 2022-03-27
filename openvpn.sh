@@ -22,7 +22,7 @@ mkdir $SRC
 ######## ####################################################################
 
 mkdir $SRC/zlib && cd $SRC/zlib
-$WGET http://www.zlib.net/zlib-1.2.10.tar.gz
+$WGET https://www.zlib.net/fossils/zlib-1.2.10.tar.gz
 tar zxvf zlib-1.2.10.tar.gz
 cd zlib-1.2.10
 
