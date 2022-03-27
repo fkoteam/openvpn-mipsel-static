@@ -13,7 +13,7 @@ LDFLAGS="-L$DEST/lib -Wl,--gc-sections"
 CPPFLAGS="-I$DEST/include"
 CFLAGS="-mtune=mips32 -mips32 -O3 -ffunction-sections -fdata-sections"	
 CXXFLAGS=$CFLAGS
-CONFIGURE="./configure --prefix=/jffs --host=mipsel-linux"
+CONFIGURE="./configure --prefix=/jffs --host=mips-linux"
 MAKE="make -j`nproc`"
 mkdir $SRC
 
@@ -30,7 +30,7 @@ LDFLAGS=$LDFLAGS \
 CPPFLAGS=$CPPFLAGS \
 CFLAGS=$CFLAGS \
 CXXFLAGS=$CXXFLAGS \
-CROSS_PREFIX=mipsel-linux- \
+CROSS_PREFIX=mips-linux- \
 ./configure \
 --prefix=/jffs
 
