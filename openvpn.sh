@@ -47,7 +47,7 @@ $WGET https://www.openssl.org/source/openssl-1.0.2j.tar.gz
 tar zxvf openssl-1.0.2j.tar.gz
 cd openssl-1.0.2j
 
-./Configure linux-mips1 \
+./Configure linux-mips32 \
 -mtune=mips1 -mips1 -ffunction-sections -fdata-sections -Wl,--gc-sections \
 --prefix=/opts zlib \
 --with-zlib-lib=$DEST/lib \
